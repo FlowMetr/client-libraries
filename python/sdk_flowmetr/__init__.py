@@ -1,3 +1,4 @@
-from .core import HelloWorld
 
-__all__ = ['HelloWorld']
+from .core import FlowMetr
+
+__all__ = ['FlowMetr']
