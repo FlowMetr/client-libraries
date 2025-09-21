@@ -3,13 +3,13 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sdk-flowmetr"
+name = "flowmetr"
 version = "1.0.0"
-description = "A modern Python SDK for greeting operations with comprehensive testing"
+description = "FlowMetr Python client library"
 readme = "README.md"
-license = {text = "MIT"}
+license = {text = "MIT License"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Dennis Hansen", email = "dh@flowmetr.com"}
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -27,7 +27,7 @@ dependencies = []
 
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/hello-world-sdk"
-"Bug Reports" = "https://github.com/yourusername/hello-world-sdk/issues"
-"Source" = "https://github.com/yourusername/hello-world-sdk"
+"Homepage" = "https://FlowMetr.com"
+"Bug Reports" = "https://github.com/FlowMetr/client-libraries/issues"
+"Source" = "https://github.com/FlowMetr/client-libraries"
 
