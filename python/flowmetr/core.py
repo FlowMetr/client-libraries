@@ -19,6 +19,14 @@ class FlowMetr:
         res = requests.get(f"https://flowmetr.com/hooks/{self.flow_id}?run_id={self.run_id}&node_id={self.node_id}&node_type=start&logs={self.logs}&project_token={self.project_token}")
         print(f"request sent to:{f"https://flowmetr.com/hooks/{self.flow_id}?run_id={self.run_id}&node_id={self.node_id}&node_type=start&logs={self.logs}&project_token={self.project_token}"}")
         print(f"response:{res.text}")
+        
+    def stop(self,node_id,run_id,logs):
+        self.node_id = node_id
+        self.run_id = run_id
+        self.logs = logs
+        res = requests.get(f"https://flowmetr.com/hooks/{self.flow_id}?run_id={self.run_id}&node_id={self.node_id}&node_type=stop&logs={self.logs}&project_token={self.project_token}")
+        print(f"request sent to:{f"https://flowmetr.com/hooks/{self.flow_id}?run_id={self.run_id}&node_id={self.node_id}&node_type=stop&logs={self.logs}&project_token={self.project_token}"}")
+        print(f"response:{res.text}")
     
     def test(self):
         print(f"flow_id: {self.flow_id}")

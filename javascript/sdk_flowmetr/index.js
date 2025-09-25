@@ -30,5 +30,20 @@ class FlowMetr {
         console.error("Error:", error);
       });
   }
+  stop(node_id, run_id, logs) {
+    this.node_id = node_id;
+    this.run_id = run_id;
+    this.logs = logs;
+    const request_url = `https://flowmetr.com/hooks/${this.flow_id}?run_id=${this.run_id}&node_id=${this.node_id}&node_type=stop&logs=${this.logs}&project_token=${this.project_token}`;
+    console.log(`request sent to: ${request_url}`);
+    fetch(request_url)
+      .then((response) => response.text())
+      .then((data) => {
+        console.log(`response: ${data}`);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
 }
 module.exports = { FlowMetr };

@@ -14,3 +14,9 @@ flowmetr.start(
   (run_id = "fa932b0f386f5d2e"),
   (logs = "Started")
 );
+
+flowmetr.stop(
+  (node_id = "stop-trigger"),
+  (run_id = "c0940c1f0c8c2f66"),
+  (logs = "Stopped")
+);

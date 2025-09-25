@@ -5,3 +5,5 @@ flowmetr = FlowMetr(url="https://FlowMetr.com",flow_id="339a7c52-58eb-4537-ab92-
 flowmetr.test()
 
 flowmetr.start(node_id="start-trigger",run_id="fa932b0f386f5d2e",logs="Started")
+flowmetr.stop(node_id="stop-trigger",run_id="c0940c1f0c8c2f66",logs="Stopped")
+
